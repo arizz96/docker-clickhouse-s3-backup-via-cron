@@ -44,7 +44,7 @@ WORKDIR /backup
 # Prepare ruby & gems
 COPY Gemfile /backup/Gemfile
 COPY Gemfile.lock /backup/Gemfile.lock
-RUN gem install nokogiri -v 1.6.7.1 -- --use-system-libraries=true --with-xml2-include=/usr/include/libxml2 && \
+RUN gem install nokogiri -v 1.8.5 -- --use-system-libraries=true --with-xml2-include=/usr/include/libxml2 && \
     gem install bundler -v 1.10.6 && \
     bundle config build.nokogiri --use-system-libraries=true --with-xml2-include=/usr/include/libxml2 && \
     NOKOGIRI_USE_SYSTEM_LIBRARIES=1 bundle install

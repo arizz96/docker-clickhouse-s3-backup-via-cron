@@ -14,6 +14,7 @@ RUN apt-get update \
         libxslt-dev \
         liblzma-dev \
         zlib1g-dev \
+        lbzip2 \
         patch \
         apt-transport-https \
         dirmngr \

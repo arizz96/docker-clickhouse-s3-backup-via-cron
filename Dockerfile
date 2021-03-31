@@ -2,7 +2,7 @@ FROM ubuntu:16.04
 MAINTAINER arizz96@gmail.com
 
 ARG repository="deb http://repo.yandex.ru/clickhouse/deb/stable/ main/"
-ARG version=19.3.4
+ARG version=21.2.5.5
 
 RUN apt-get update \
     && apt-get install --yes --no-install-recommends \
